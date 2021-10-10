@@ -1,0 +1,68 @@
+
+.list-group-item{
+    border: none ;
+}
+#myList{
+    flex-direction: row;
+}
+.list-group-item.active {
+    background-color: black;
+}
+.accordion-button{
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 10px;
+}
+.card-img-top {
+    height: 182px;
+    width: 146px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: none;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.buttonAlignment{
+    margin: 5px 5px 5px 5px;
+    width: 50px;
+    border: 1px solid black;
+    padding: 0 1rem;
+}
+.buttonSizing{
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+}
+#AmountID1,#AmountID2,#AmountID3,#AmountID4{
+    border: 1px solid black;
+    padding: 5px 5px 5px 5px;
+    text-align-last: center;
+}
+.cardImages{
+    display:flex;
+    max-width: 53rem;
+}
+.cardSection2{
+    display: flex;
+}
+.checkout{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+.containBody{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.checkoutSection{
+    width: 30%;
+}

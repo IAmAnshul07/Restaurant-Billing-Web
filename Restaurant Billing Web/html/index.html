@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Imported CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Added Navigation Bar -->
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="width: 80%;">
+                <h4 class="m-0">The Great Table</h4>
+                <p class="m-0">Today <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                    </svg></p>
+            </div>
+            <form class="d-flex" style="height: auto;">
+                <button type="submit" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg></button>
+            </form>
+        </div>
+    </nav>
+    <!-- Added Main Container -->
+    <div class="container-lg">
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="">
+                    <section class="second"> 
+                        <p>Table 5 - <b>Mrs. Einstein</b></p>
+                    </section>
+                    <!-- Section to choose Type of food or drinks -->
+                    <div class="row m-0" style="border: 1px solid black;">
+                        <div class="col-sm-4 p-0">
+                            <a class="list-group-item list-group-item-action active " data-bs-toggle="list" href="#"
+                                role="tab" onclick="openCity(event, 'Drinks')">Drinks</a>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab"
+                                onclick="openCity(event, 'Food')">Food</a>
+                        </div>
+                        <div class="col-sm-4 p-0">
+                            <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#" role="tab"
+                                onclick="openCity(event,'Dessert')">Dessert</a>
+                        </div>
+                    </div>
+                    <!-- Added accordion  -->
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Wine
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="card row">
+                                                <div class="col-md-4">
+                     <!-- From here added the products and buttons -->
+                                                    <img src="../images/alexander-cifuentes-mhad_4H6S14-unsplash.jpg"     
+                                                    class="card-img-top img-fluid" alt="alexander">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <p class="card-text item-name">Beaux Freres</p>
+                                                        <p class="price">$11.7</p>
+                                                        <div class='buttons'>
+                                                            <button
+                                                                class="plusBtn buttonAlignment buttonSizing">+</button>
+                                                            <input class="buttonAlignment totalAmount"
+                                                                name="totalAmount" type="text" value="0" readonly>
+                                                            <button
+                                                                class="minusBtn buttonAlignment buttonSizing">-</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="card row">
+                                                <div class="col-md-4">
+                                                    <img src="../images/marvin-l-U_82hv1mKSo-unsplash.jpg"
+                                                        class="card-img-top img-fluid" alt="alexander">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <p class="card-text item-name">Chateau Climens</p>
+                                                        <p class="price">$10</p>
+                                                        <div class='buttons'>
+                                                            <button
+                                                                class="plusBtn buttonAlignment buttonSizing">+</button>
+                                                            <input class="buttonAlignment totalAmount"
+                                                                name="totalAmount" type="text" value="0" readonly>
+                                                            <button
+                                                                class="minusBtn buttonAlignment buttonSizing">-</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="card row">
+                                                <div class="col-md-4">
+                                                    <img src="../images/brett-jordan-fAz5Cf1ajPM-unsplash.jpg"
+                                                        class="card-img-top img-fluid" alt="alexander">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <p class="card-text item-name">Cabernet Sauvignon</p>
+                                                        <p class="price">$28</p>
+                                                        <div class='buttons'>
+
+                                                            <button
+                                                                class="plusBtn buttonAlignment buttonSizing">+</button>
+                                                            <input class="buttonAlignment totalAmount"
+                                                                name="totalAmount" type="text" value="0" readonly>
+                                                            <button
+                                                                class="minusBtn buttonAlignment buttonSizing">-</button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="card row">
+                                                <div class="col-md-4">
+                                                    <img src="../images/jakub-dziubak-5lZhD2qQ2SE-unsplash.jpg"
+                                                        class="card-img-top img-fluid" alt="alexander">
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="card-body">
+                                                        <p class="card-text item-name">Domaine Serene</p>
+                                                        <p class="price">$36.2</p>
+                                                        <div class='buttons'>
+
+                                                            <button
+                                                                class="plusBtn buttonAlignment buttonSizing">+</button>
+
+                                                            <input class="buttonAlignment totalAmount"
+                                                                name="totalAmount" type="text" value="0" readonly>
+                                                            <button
+                                                                class="minusBtn buttonAlignment buttonSizing">-</button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- This section starts the right section of the page which contains all the billing and other checkout stuffs -->
+
+            <div class="col-md-4">
+                <div class="px-5">
+                    <div class="d-flex flex-row justify-content-between">
+                        <h5>Check</h5>
+                        <div class="d-flex flex-row">
+                            <p>Split Check</p>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- This is the final checkout products comes in the catagory of food, drinks and dessert  -->
+                    <div class="d-flex flex-column justify-content-between">
+                        <div class="row">
+                            <div class="d-flex flex-row justify-content-between">
+                                <strong>Drinks</strong>
+                                <Strong>$<span id="totalDrinks">0</span></Strong>
+                            </div>
+                            <div id="drinks-bill">
+
+                            </div>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between">
+                                <strong>Food</strong>
+                                <Strong>$0.00</Strong>
+                            </div>
+                            <div id="food-bill">
+
+                            </div>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between">
+                                <strong>Dessert</strong>
+                                <Strong>$0.00</Strong>
+                            </div>
+                            <div id="dessert-bill">
+
+                            </div>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="d-flex flex-row justify-content-between">
+                                <p>Subtotal</p>
+                                <p>$<span id="subtotal">0.00</span></p>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <p>Estimated Taxes</p>
+                                <p>$12.00</p>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between">
+                                <p>Discount</p>
+                                <p>$0.00</p>
+                            </div>
+                            <button type="button" class="btn btn-success">Pay $<span id="pay">0</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Imported the javaScript and Jquery  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
